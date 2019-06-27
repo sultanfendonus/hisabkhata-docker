@@ -9,3 +9,8 @@ services:
     image: mongo
     ports:
       - "27017:27017"
+  mongo-express:
+    image: mongo-express
+    restart: always
+    ports:
+      - 3006:8081
